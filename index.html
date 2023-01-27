@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Simples</title>
+</head>
+
+<body>
+    <div class="topo"></div>
+    <div class="formulario">
+
+        <form action="">
+            <div class="nome">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome">
+                <label for="nome">Sobrenome</label>
+                <input type="text" id="sobrenome" name="sobrenome">
+            </div>
+            <div class="idade">
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" name="idade">
+            </div>
+
+            <div class="nascimento">
+                <label for="nascimento">Data de Nascimento</label>
+                <input type="date" name="nascimento" id="nascimento">
+            </div>
+
+            <div class="sexo">
+                <label for="sexo">Sexo</label>
+                <select name="sexo" id="sexo">
+                    <option value="Selecione" selected disabled>-- Selecione uma opção --</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select>
+            </div>
+
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="endereco">
+                <label for="endereco">Endereço</label>
+                <input type="text" name="endereco" id="endereco">
+            </div>
+            <div class="telefone">
+                <label for="telefone">DDD</label>
+                <input type="tel" name="DDD" id="ddd">
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone">
+            </div>
+
+            <div class="cep">
+                <label for="cep">CEP</label>
+                <input type="number" name="cep" id="cep">
+            </div>
+            <div class="cidade-estado">
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade">
+                <label for="estado">Estado</label>
+                <input type="text" name="estado" id="estado">
+            </div>
+
+            <div class="arquivo">
+                <label for="arquivo">Envie seu arquivo</label>
+                <input type="file" name="arquivo" id="arquivo">
+            </div>
+
+            <div class="termos">
+                <label for="termos">Termos</label>
+                <input type="checkbox" name="termos" id="termos">
+                <span>Eu concordo com os termos, condições e políticas.</span>
+            </div>
+
+            <div class="botao-enviar">
+                <label for="enviar-formulario">Enviar</label>
+                <input type="submit" value="Enviar">
+            </div>
+
+        </form> 
+
+    </div>
+</body>
+
+</html>
