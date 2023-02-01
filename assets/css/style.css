@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+input, select {
+    font-size: 15px;
+    border: 1px solid #bbb8b8;
+    padding: 10px;
+    margin-top: 10px;    
+    border-radius: 5px;
+}
+
+.oculto {
+    display: none;
+}
+
+.formulario {
+    margin-top: 20px;
+    flex-basis: 60%;
+}
+
+
+.campos {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nome {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nome label {
+    flex-basis: 100%;
+}
+
+.nome input {
+    min-width: 48%;
+}
+
+.idade-nascimento-sexo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.idade, .nascimento, .sexo {
+    flex-shrink: 1;
+}
+
+.telefone {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.telefone .ddd, .telefone .numero {
+    display: flex;
+    flex-direction: column;
+}
+
+.telefone .ddd {
+ margin-right: 20px;
+ width: 38px;
+}
+
+.cidade-estado-cep {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-bottom: 30px;
+}
+
+.cidade, .estado, .cep {
+    display: flex;
+    flex-direction: column;
+}
+
