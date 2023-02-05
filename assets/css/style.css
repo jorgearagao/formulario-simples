@@ -8,16 +8,16 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin-bottom: 50px;
     color: rgb(85, 83, 83);
 }
 
-input, select {
+input,
+select {
     font-size: 15px;
     border: 1px solid #dad7d7;
-    color: rgb(85, 83, 83);;
+    color: rgb(85, 83, 83);
     padding: 13px;
     margin-top: 10px;
     border-radius: 5px;
@@ -33,14 +33,12 @@ input:focus, select:focus {
 }
 
 .topo {
-    padding: 20px;
+    margin-top: 20px;
 }
 
 .formulario {
     margin-top: 40px;
-    flex-basis: 60%;
 }
-
 
 .campos {
     margin-bottom: 30px;
@@ -69,7 +67,9 @@ input:focus, select:focus {
     justify-content: space-between;
 }
 
-.idade, .nascimento, .sexo {
+.idade,
+.nascimento,
+.sexo {
     flex-shrink: 1;
 }
 
@@ -79,25 +79,28 @@ input:focus, select:focus {
 
 }
 
-.telefone .ddd, .telefone .numero {
+.telefone .ddd,
+.telefone .numero {
     display: flex;
     flex-direction: column;
 }
 
 .telefone .ddd {
- margin-right: 20px;
- width: 50px;
+    margin-right: 20px;
+    width: 50px;
 }
 
 .cidade-estado-cep {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-margin-bottom: 30px;
-gap: 30px
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 30px
 }
 
-.cidade, .estado, .cep {
+.cidade,
+.estado,
+.cep {
     display: flex;
     flex-direction: column;
 }
@@ -123,4 +126,37 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #6553a7;
+}
+
+@media (max-width: 500px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .topo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .formulario {
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    .nome {
+        flex-direction: column;
+    }
+
+    .idade-nascimento-sexo {
+        flex-direction: column;
+    }
+
+    .cidade-estado-cep {
+        flex-direction: column;
+    }
 }
