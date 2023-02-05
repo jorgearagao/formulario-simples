@@ -141,6 +141,9 @@ input[type="submit"]:hover {
         display: flex;
         justify-content: center;
     }
+    .topo h1 {
+        font-size: 25px;
+    }
 
     .formulario {
         flex-direction: row;
